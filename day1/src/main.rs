@@ -15,8 +15,29 @@ fn main() {
     numerot.iter().for_each(|z| {
         numerot.iter().for_each(|x| {
             if z + x == 2020 {
-                println!("numbers found: {} and {}, solution is {}", z, x, z * x)
+                println!(
+                    "numbers found: {} and {}, first part solution is {}",
+                    z,
+                    x,
+                    z * x
+                )
             }
+        })
+    });
+
+    numerot.iter().for_each(|z| {
+        numerot.iter().for_each(|x| {
+            numerot.iter().for_each(|y| {
+                if z + x + y == 2020 {
+                    println!(
+                        "numbers found: {} and {} and {}, second part solution is {}",
+                        z,
+                        x,
+                        y,
+                        z * x * y
+                    )
+                }
+            })
         })
     });
 }
