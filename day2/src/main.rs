@@ -26,7 +26,7 @@ fn main() {
         let first = pass.chars().nth(llimit - 1).unwrap() == c;
         let second = pass.chars().nth(ulimit - 1).unwrap() == c;
 
-        if (first || second) && !(first && second) {
+        if first != second {
             part2 = part2 + 1;
         }
     }
