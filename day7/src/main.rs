@@ -53,7 +53,7 @@ fn main() {
             .for_each(|rule| {
                 let amount = rule.1 .0.parse::<i32>().unwrap();
                 sum = sum + amount;
-                for i in 0..amount {
+                for _i in 0..amount {
                     bags.push(rule.1 .1.to_string());
                 }
             })
